@@ -1,0 +1,131 @@
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+font-family: 'Open Sans', sans-serif;
+margin: 0;
+}
+h1, h2 {
+font-family: 'Yeon Sung', cursive;
+	font-weight: 400;
+	text-shadow: 2px 2px 4px grey;
+}
+h1 {
+	font-size: 80px;
+}
+h2 { 
+	font-size: 40px;
+	margin-top: 0;
+}
+h3 {
+	margin:0;
+}
+.navbar body{
+	background: white;
+	width: 100%;
+} 
+.navbar ul {
+	text-align: left;
+	list-style: none;
+	
+}
+.navbar ul li {
+	font: bold 20px/26px 'Yeon Sung', cursive;
+	display: inline-block;
+	position: relative;
+	padding: 10px 15px;
+	background: white;
+	cursor: pointer;
+}
+.navbar ul li:hover {
+	background:black;
+	color: orange;
+}
+.navbar ul li ul {
+	padding:0;
+	position: absolute;
+	top: 48px;
+	left:-10000px;
+	width: 200px;
+}
+.navbar ul li ul li{
+	background: white;
+	display:block;
+	color: black;	
+}
+.navbar ul li ul li;hover{
+	background: red;
+}
+.navbar ul li:hover ul {
+	display: block;
+	left: 0px;
+}
+
+a {
+	color: #EB5E28;
+}
+a:hover {
+	text-decoration: none;
+}
+.content-wrap {
+	max-width: 950px;
+	margin:  0 auto;
+	padding: 50px;
+	overflow: auto;
+}
+.col-narrow {
+	width: 30%;
+	float: left;
+}
+.col-wide {
+	width: 70%;
+	float: left;
+	padding-left: 20px;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+/*Header and Footer styles
+--------------------*/
+header, footer {
+	background: #252422;
+	color: #CCC5B9;
+}
+/* header */
+.profile-img {
+	border-radius: 50%;
+}
+
+header h1, header h2 {
+	color: #FFFCF2;
+	margin: 0;
+}
+/*footer */
+footer {
+	text-align: center;
+}
+.contact-info a{
+	
+	padding: 10px;
+	display: inline-block;
+}
+/*Work Experience
+------------------*/
+.work {
+	background: #FFFCF2;
+}
+h3~p{
+	margin: 0;
+}
+/*Education
+---------------------*/
+.education {
+	background: #CCC5B9;
+}
+.education h2{
+	color:#EB5E28;
+}
