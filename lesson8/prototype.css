@@ -1,0 +1,104 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+font-family: 'Open Sans', sans-serif;
+margin: 0;
+	background-color:#CCC5B9;
+	color: #EB5E28; 
+}
+h1, h2 {
+font-family: 'Yeon Sung', cursive;
+	font-weight: 400;
+	text-shadow: 2px 2px 4px grey;
+}
+h1 {
+	font-size: 80px;
+}
+h2 { 
+	font-size: 40px;
+	margin-top: 0;
+}
+h3 {
+	margin:0;
+}
+
+a {
+	color: #EB5E28;
+}
+a:hover {
+	text-decoration: none;
+}
+/* Create three equal columns that floats next to each other */
+.column-items{
+  float: left;
+  max-width: 90%;
+  padding: 10px;
+  margin: 10px;
+  height: 600px; 
+  color:#CCC5B9; /* Should be removed. Only for demonstration */
+}
+.responsive {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display:table;
+  clear: both;
+}
+
+.content-wrap {
+	max-width: 950px;
+	margin-top: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	padding:  60px 50px;
+	overflow: hidden;
+}
+header, footer {
+	background: #252422;
+	color: #CCC5B9;
+}
+header {
+	padding-top: 50px;
+	position: relative;
+}
+footer {
+	text-align: center;
+}
+.contact-info a{
+	
+	padding: 10px;
+	display: inline-block;
+}
+nav {
+	text-align: center;
+	color: orangered;
+	background:#CCC5B9;
+	position: fixed;
+	top: 0;
+	width: 100%
+}
+
+nav a {
+	display: inline-block;
+	padding: 15px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+
+@media screen and (max-width: 600px) {
+	.column-items {
+    width: 100%;
+}
+}
