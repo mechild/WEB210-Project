@@ -1,0 +1,266 @@
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+font-family: 'Open Sans', sans-serif;
+margin: 0;
+}
+h1, h2 {
+font-family: 'Yeon Sung', cursive;
+font-weight: 400;
+	text-shadow: 2px 2px 4px grey;
+}
+h1 {
+	font-size: 80px;
+}
+h2 { 
+	font-size: 40px;
+	margin-top: 0;
+}
+h3 {
+	margin:0;
+}
+
+a {
+	color: #EB5E28;
+}
+a:hover {
+	text-decoration: none;
+}
+.content-wrap {
+	max-width: 950px;
+	margin:  0 auto;
+	padding:  60px 50px;
+	overflow: hidden;
+}
+.col-narrow {
+	width: 30%;
+	float: left;
+}
+.col-wide {
+	width: 70%;
+	float: left;
+	padding-left: 20px;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.btn {
+	text-decoration: none;
+	background: #EB5E28 ;
+	color: white;
+	padding: 10px;
+	display: inline-block;
+	
+}
+/*Header and Footer styles
+--------------------*/
+header, footer {
+	background:black;
+	color: #CCC5B9; 
+}
+header {
+	padding-top: 50px;
+	position: relative;
+	background: black;
+}
+.profile-img {
+	border-radius: 50%;
+}
+
+header h1, header h2 {
+	color: #FFFCF2;
+	margin: 0;
+}
+.download{
+	
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+/*footer */
+footer {
+	text-align: center;
+}
+.contact-info a{
+	
+	padding: 10px;
+	display: inline-block;
+}
+/* Navigation 
+------------------*/
+nav {
+	text-align: center;
+	background:#CCC5B9;
+	position: fixed;
+	top: 0;
+	width: 100%
+}
+
+nav a {
+	display: inline-block;
+	padding: 15px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+/*Work Experience
+------------------*/
+.work {
+	background: #CCC5B9;
+}
+h3~p{
+	
+	margin: 0;
+}
+.job-description{
+	margin-bottom: 25px;
+}
+.job-description p:first-of-type {
+	margin-top: 0;
+}
+.education {
+    background:linear-gradient(rgba(204, 197, 185, 0.8), rgba(204, 197, 185, 0.5)),
+url(../lesson7/toronto.jpg) no-repeat fixed;
+	background-size: cover;
+}
+
+.education h2{
+	color:#EB5E28;
+}logy use 
+
+p+ h3 {
+	margin-top: 30px;
+}
+
+@media screen(in-width:900px){
+.col-narrow {
+	width: 30%;
+	float: left;
+	}
+}
+
+.col-wide {
+	width: 70%;
+	float: left;
+	padding-left: 20px;
+	}	
+
+@media screen(max-width:899px){
+ header {
+	 text-align: center;}
+.profile-img {
+	width: 200px;}
+}
+@media print {
+ 
+#content, #page {
+width: 100%; 
+margin: 0; 
+float: none;
+}
+          
+@page { margin: 2cm }
+
+
+body {
+font-family:'Open Sans', sans-serif ;
+line-height: 1.3;
+background: #fff !important;
+color: #000;
+}
+
+h1 {
+font-size: 24pt;
+}
+
+h2, h3, h4 {
+font-size: 14pt;
+margin-top: 25px;
+}    
+ 
+/* Alle Seitenumbrüche definieren */
+a {
+    page-break-inside:avoid
+}
+blockquote {
+    page-break-inside: avoid;
+}
+h1, h2, h3, h4, h5, h6 { page-break-after:avoid; 
+     page-break-inside:avoid }
+img { page-break-inside:avoid; 
+     page-break-after:avoid; }
+table, pre { page-break-inside:avoid }
+ul, ol, dl  { page-break-before:avoid }
+    
+a:link, a:visited, a {
+background: transparent;
+color: #520;
+font-weight: bold;
+text-decoration: underline;
+text-align: left;
+}
+
+a {
+    page-break-inside:avoid
+}
+
+a[href^=http]:after {
+      content:" <" attr(href) "> Download PDF";
+}
+
+article a[href^="#"]:after {
+   content: "";
+}
+
+a:not(:local-link):after {
+   content:" <" attr(href) "> ";
+}
+    
+
+#header-widgets, nav, aside.mashsb-container, 
+.sidebar, .mashshare-top, .mashshare-bottom, 
+.content-ads, .make-comment, .author-bio, 
+.heading, .related-posts, #decomments-form-add-comment, 
+#breadcrumbs, #footer, .post-byline, .meta-single, 
+.site-title img, .post-tags, .readability 
+{
+display: none;
+}
+    
+
+.entry:after {
+content: "Thank you for visiting my website!";
+color: #999 !important;
+font-size: 1em;
+padding-top: 30px;
+}
+#header:before {
+content: "Copyright November 2019 ";
+color: #777 !important;
+font-size: 1em;
+padding-top: 30px;
+text-align: center !important;    
+}
+
+/* Wichtige Elemente definieren */    
+p, address, li, dt, dd, blockquote {
+font-size: 100%
+}
+
+
+code, pre { font-family:'Yeon Sung', cursive;}
+
+ul, ol {
+list-style: square; margin-left: 18pt;
+margin-bottom: 20pt;    
+}
+
+li {
+line-height: 1.6em;
+}    
+}
